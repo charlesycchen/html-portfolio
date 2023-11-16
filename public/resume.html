@@ -10,11 +10,29 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            div.column {
+            .column {
                 float: left;
+            }
+            div.left {
+                width: auto;
+            }
+            div.mid {
+                padding-left: 20px;
+                width: auto;
+            }
+            div.right {
+                float: right;
+                width: auto;
+            }
+            .left-half {
                 width: 50%;
             }
-            div.row::after {
+            .right-half {
+                width: 50%;
+            }
+            .row::after {
+                content: "";
+                display: table;
                 clear: both;
             }
             h1 {
@@ -32,7 +50,6 @@
                 font-style: italic;
             }
             footer.centered {
-                padding-top: 15px;
                 text-align: center;
             }
         </style>
@@ -40,12 +57,33 @@
 
     <body>
         <h1>Charles Chen (Yu-Chuan Chen)</h1>
-        <img src="./assets/images/professional-portrait.jpg" height="150"/>
-        <h2>Summary</h2>
+        <div class="row">
+            <div class="column left">
+                <img alt="professional portrait" src="../assets/images/professional-portrait.jpg" height="150" />
+            </div>
+            <div class="column mid">
+                <br /><br /><br /><br />
+                <img src="../assets/images/mail-icon.png" height="20px" />
+                <small>charycchen@gmail.com</small><br />
+                <img src="../assets/images/mobile-phone-icon.png" height="20px" />
+                <small>(+886) 908-359-816</small><br />
+                <img src="../assets/images/location-icon.png" height="20px" />
+                <small>Hsinchu City, Taiwan</small>
+            </div>
+            <div class="right">
+                <br /><br /><br /><br /><br />
+                <img src="../assets/images/linkedin-icon.png" height="20px"/>
+                <a href="https://www.linkedin.com/in/charlesycchen/"><small>https://www.linkedin.com/in/charlesycchen/</small></a><br />
+                <img src="../assets/images/github-icon.png" height="20px"/>
+                <a href="https://github.com/charlesycchen"><small>https://github.com/charlesycchen</small></a>
+            </div>
+        </div>
+        
+        
 
         <h2>Education</h2>
         <h3>National Chung Hsing University | Taichung, Taiwan <span class="date">Sep 2018 – Jun 2022</span></h3>
-        <p>Bachelor of Science, Major in Physics and Minor in Computer Science and Engineering</p>
+        <i>Bachelor of Science, Major in <b>Physics</b> and Minor in <b>Computer Science and Engineering</b></i>
         <ul>
             <li><b>Last 60 GPA: 3.99/4.3</b></li>
             <li>Won <b>Academic Excellence Award (GPA: 4.17/4.3)</b> in the second semester of the year 2021.</li>
@@ -92,12 +130,12 @@
 
         <h2>Skills</h2>
         <div class="row">
-            <div class="column">
+            <div class="column left-half">
                 <b>Programming Languages:</b> Python, Java, C++, C, JavaScript, HTML, CSS, Kotlin, Assembly Language<br />
                 <b>Frameworks:</b> Django, OpenCV, Tensorflow, Scikit-Learn, PyTesseract<br />
                 <b>Database Management:</b> SQL, MongoDB
             </div>
-            <div class="column">
+            <div class="column right-half">
                 <b>Operating Systems:</b> Unix, Linux (Bash)<br />
                 <b>Technologies:</b> Docker (Basic)<br />
                 <b>Version Control:</b> GitHub, Git<br />
