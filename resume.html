@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume</title>
+        <style>
+            body {
+                max-width: 700px;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .column {
+                float: left;
+            }
+            div.left {
+                width: auto;
+            }
+            div.mid {
+                padding-left: 20px;
+                width: auto;
+            }
+            div.right {
+                float: right;
+                width: auto;
+            }
+            .left-half {
+                width: 50%;
+            }
+            .right-half {
+                width: 50%;
+            }
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            h1 {
+                text-align: center;
+            }
+            h4.item {
+                margin-right: 0px;
+            }
+            img.rounded-corners {
+                border-radius: 50%;
+            }
+            span.date {
+                float: right;
+                font-size: 14px;
+                font-style: italic;
+            }
+            footer.centered {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Charles Chen</h1>
+        <div class="row">
+            <div class="column left">
+                <img alt="professional portrait" src="../assets/images/professional-portrait.jpg" height="150" />
+            </div>
+            <div class="column mid">
+                <br /><br /><br /><br />
+                <img src="../assets/images/mail-icon.png" height="20px" />
+                <small>charycchen@gmail.com</small><br />
+                <img src="../assets/images/linkedin-icon.png" height="20px"/>
+                <a href="https://www.linkedin.com/in/charlesycchen/"><small>https://www.linkedin.com/in/charlesycchen/</small></a><br />
+                <img src="../assets/images/github-icon.png" height="20px"/>
+                <a href="https://github.com/charlesycchen"><small>https://github.com/charlesycchen</small></a>
+            </div>
+        </div>
+        
+        
+
+        <h2>Education</h2>
+        <h3>National Chung Hsing University | Taichung, Taiwan <span class="date">Sep 2018 – Jun 2022</span></h3>
+        <i>Bachelor of Science, Major in <b>Physics</b> and Minor in <b>Computer Science and Engineering</b></i>
+        <ul>
+            <li><b>Last 60 GPA: 3.99/4.3</b></li>
+            <li>Won <b>Academic Excellence Award (GPA: 4.17/4.3)</b> in the second semester of the year 2021.</li>
+            <li>
+                <b>CS-Related Courses (CS-Related Courses GPA: 3.51/4.3):</b><br />
+                Data Structures / Algorithm / Operating Systems / Computer Networks / Computer Organization / Unix System and Script Programming / Introduction to Database Management System / Data Mining and Visualization / Assembly Language and System Programming / Operating Systems Lab / Introduction and Application of Artificial Intelligence / Introduction to Deep Learning in Image Processing / Data Analysis, Graphics and Machine Learning with R / Logic Design
+            </li>
+        </ul>
+
+        <h3>School Projects</h3>
+        <h4>The Effectiveness of Various Precautions Against Pandemic, Physics at NCHU <span class="date">Mar 2021 – Jun 2021</span></h4>
+        <small><b>GitHub link:</b> <a href="https://github.com/The-Statistical-Thermodynamics-Group/Final-Project">https://github.com/The-Statistical-Thermodynamics-Group/Final-Project</a></small>
+        <p><b>Tools/Packages:</b> Matplotlib, GitHub, UML, Linux Bash, YAML, Manim (open-source visualization package)</p>
+        <ul>
+            <li>Built the <b>SIR model</b> with 7 precaution-related variable parameters and 4 infection-related constant parameters for spread of pandemic in <b>Python</b>.</li>
+            <li>Designed the mechanism of <b>individual movement</b> controlled by <b>gravity well</b> as driving force and <b>social distancing factor</b> as repulsive force. Each individual can <b>randomly travel</b> between different <b>communities</b>.</li>
+            <li>Created the mechanism of <b>infection</b> affected by infection radius, infection rate, infection duration, <b>incubation period</b>, <b>quarantine zone</b> and <b>percentage of no symptom</b>.</li>
+            <li>Indicated both <b>wearing masks</b> and <b>quarantine</b>, the most effective precautions, can <b>individually decrease the number of infection by 60%</b> compared with no precaution.</li>
+            <li>Implied <b>loosening travel restrictions</b> is a <b>feasible policy</b> by finding that reducing travel rate by 50% does not really decrease the number of infection, and that community lockdown just decrease the number of infection by 30%.</li>
+        </ul>
+
+        <h4>Simplified Instructional Computer (SIC) Assembler, CSE at NCHU <span class="date">May 2022 – Jun 2022</span></h4>
+        <small><b>GitHub link:</b> <a href="https://github.com/charlesycchen/NCHU_CSE/tree/main/Assembly%20Language/Final%20Project">https://github.com/charlesycchen/NCHU_CSE/tree/main/Assembly%20Language/Final%20Project</a></small>
+        <ul>
+            <li>Built a 2-pass SIC assembler providing direct addressing and <b>indexed addressing</b> modes with highly-readable codes in <b>C++</b> and <b>modular design</b> for repeated functions of parsing instruction.</li>
+            <li>In 1st pass, scan operation code definitions and assign addresses to corresponding symbol. In 2nd pass, <b>generate object code</b> with header, text and end records; formulate instruction in <b>24-bit format</b>.</li>
+        </ul>
+
+        <h4>Online Food Ordering System, CSE at NCHU <span class="date">Oct 2021 – Jan 2022</span></h4>
+        <small><b>GitHub link:</b> <a href=" https://github.com/Online-Food-Ordering-System-Group/Project"> https://github.com/Online-Food-Ordering-System-Group/Project</a></small>
+        <ul>
+            <li>Designed the data schema and drew the <b>E-R diagram</b>.</li>
+            <li>Deployed the relational database on <b>MongoDB</b> in document (JSON) format.</li>
+            <li>Built 5 entity sets, 4 sets of which in <b>4NF</b>, and 4 relationship sets.</li>
+            <li>Created real-world data in <b>MongoDB Compass</b> and tested queries by <b>Postman</b>.</li>
+        </ul>
+
+        <h2>Personal Projects</h2>
+        <h4>License Plate Recognition <span class="date">Jan 2021 – Jan 2021</span></h4>
+        <small><b>GitHub link:</b> <a href="https://github.com/charlesycchen/Self-learning-Place/tree/main/license_plate_recognition">https://github.com/charlesycchen/Self-learning-Place/tree/main/license_plate_recognition</a></small>
+        <ul>
+            <li>Succeeded in recognizing license plate number using <b>OpenCV</b> and <b>PyTesseract</b>.</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="column left-half">
+                <b>Programming Languages:</b> Python, Java, C++, C, JavaScript, HTML, CSS, Kotlin, Assembly Language<br />
+                <b>Frameworks:</b> Django, OpenCV, Tensorflow, Scikit-Learn, PyTesseract<br />
+                <b>Database Management:</b> SQL, MongoDB
+            </div>
+            <div class="column right-half">
+                <b>Operating Systems:</b> Unix, Linux (Bash)<br />
+                <b>Technologies:</b> Docker (Basic)<br />
+                <b>Version Control:</b> GitHub, Git<br />
+                <b>Software Architecture:</b> Design Pattern, E-R diagram, UML<br />
+                <b>Others:</b> Project Management, Music Production<br />
+            </div>
+        </div>
+        
+        <footer class="centered">
+            <p><small>&copy; 2023 - <span id="currentYear"></span> Yu-Chuan Chen. All rights reserved.</small></p>
+        </footer>
+    </body>
+
+    <script>
+        // Get the current year.
+        let currentDate = new Date();
+        let currentYear = currentDate.getFullYear();
+
+        // Find the element with the id "currentYear"
+        let currentYearElement = document.getElementById("currentYear");
+        // Update the content of the element with the current year
+        currentYearElement.textContent = currentYear;
+    </script>
+</html>

@@ -1,30 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Charles's Portfolio</title>
-        <style>
-            .profile-link {
-                float:left;
-                padding-left: 15px;
-            }
-        </style>
-    </head>
-    
-    <body>
-        <h1>Charles (Yu-Chuan) Chen's Portfolio</h1>
-        <h2>I'm a New Graduate Looking for a Software Engineer Job!</h2>
+<html““ lang="en">
 
-        <hr />
-        <a href="./public/movie-ranking.html"><h3>Movie Ranking Project</h3></a>
-        <img alt="movie ranking project preview" src="./assets/images/movie-ranking.png" height="200"/>
-        <a href="./public/birthday-invite.html"><h3>Birthday Invite Project</h3></a>
-        <img alt="birthday invite project preview" src="./assets/images/birthday-invite.png" height="200"/>
+  <head>
+    <meta charset="UTF-8">
+    <title>Charles Chen</title>
+    <meta name="description" content="">
 
-        <hr />
-        <a class="profile-link" href="./public/about.html"><h3>About Me</h3></a>
-        <a class="profile-link" href="./public/resume.html"><h3>Resume</h3></a>
-        <a class="profile-link" href="./public/motivation-meme.html"><h3>Motivation</h3></a>
-        <a class="profile-link" href="./public/contact.html"><h3>Contact Me</h3></a>
-    </body>
-</html>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+      <!-- Brand -->
+      <a href="/" class="navbar-brand d-flex">
+        <svg class="me-3" width="89" height="48" viewBox="0 0 89 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M45.8518 9.21588C42.5322 13.437 40.7288 18.6414 40.7288 24H48.2712C48.2712 20.316 49.511 16.738 51.7932 13.8359C54.0754 10.9339 57.2686 8.87477 60.8642 7.98665C64.4597 7.09853 68.2508 7.43248 71.6333 8.93531C75.0158 10.4381 77.7953 13.0234 79.5289 16.2792C81.2625 19.535 81.8505 23.274 81.1992 26.9006C80.5479 30.5273 78.6948 33.8328 75.9351 36.2907C73.1754 38.7486 69.6679 40.2175 65.9713 40.4632C62.2748 40.709 58.6018 39.7175 55.5376 37.6468L51.2982 43.8499C55.7552 46.8619 61.0977 48.304 66.4745 47.9465C71.8513 47.5891 76.9531 45.4526 80.9672 41.8774C84.9813 38.3023 87.6768 33.4942 88.6241 28.2191C89.5714 22.944 88.7162 17.5054 86.1946 12.7697C83.673 8.03399 79.6301 4.27364 74.7101 2.08772C69.79 -0.0982044 64.2758 -0.583953 59.0459 0.70786C53.816 1.99967 49.1713 4.99473 45.8518 9.21588ZM43.1482 38.7841C46.4678 34.563 48.2712 29.3586 48.2712 24H40.7288C40.7288 27.684 39.489 31.262 37.2068 34.1641C34.9246 37.0661 31.7314 39.1252 28.1358 40.0134C24.5403 40.9015 20.7492 40.5675 17.3667 39.0647C13.9842 37.5619 11.2047 34.9766 9.4711 31.7208C7.73751 28.4651 7.14952 24.726 7.80081 21.0994C8.4521 17.4727 10.3052 14.1672 13.0649 11.7093C15.8246 9.25137 19.3321 7.78254 23.0287 7.53678C26.7252 7.29102 30.3982 8.28247 33.4624 10.3532L37.7018 4.15009C33.2448 1.13814 27.9024 -0.303975 22.5255 0.0534908C17.1487 0.410957 12.0469 2.54744 8.03277 6.12257C4.01866 9.6977 1.32324 14.5058 0.375907 19.7809C-0.571427 25.056 0.283827 30.4946 2.80542 35.2303C5.32701 39.966 9.36987 43.7264 14.2899 45.9123C19.21 48.0982 24.7242 48.584 29.9541 47.2921C35.184 46.0003 39.8287 43.0053 43.1482 38.7841Z"
+            fill="#1E44B1" />
+        </svg>
+        <span class="fs-2 poppins-semibold">Charles Chen</span>
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Menu -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav nav-pills ms-auto">
+          <li class="nav-item"><a href="/" class="nav-link home" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="./project/index.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="./blog/index.html" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="./book/index.html" class="nav-link">Books</a></li>
+          <li class="nav-item"><a href="./resume.html" class="nav-link highlight">Resume</a></li>
+          <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container py-4 mb-5" style="margin-top: 90px;">
+        <div class="row flex-lg-row-reverse align-items-center gy-4 py-5">
+          <div class="col-sm-8 col-lg-6 mx-auto mx-lg-0">
+            <img src="./assets/images/people-working-at-the-office.svg" class="d-block img-fluid mx-lg-auto"
+              alt="people-working-at-the-office" width="540" height="570" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-2 fw-bold lh-sm mb-3"><span class="fs-3 poppins-medium">Hi, I’m</span> <br>Charles Chen</h1>
+            <p class="hero-introduction lead poppins-regular">I’m a new graduate majoring in Physics and minoring in Computer Science and
+              Engineering, looking for a Software Engineer position.
+              I’m enthusiastic about new technology, project management and productivity enhancement. I also love
+              reading books, meditation, doing yoga and learning life wisdom.</p>
+            <div class="d-flex justify-content-center justify-content-lg-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-3">Resume</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">About me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects"></section>
+    <section id="skills"></section>
+    <section id="about"></section>
+    <section id="contact"></section>
+    <footer></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html““>
