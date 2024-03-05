@@ -140,4 +140,17 @@ body {
 
 .project-preview-text {
     color: #404040;
+    text-align: justify;
+}
+
+.project-button {
+    background-color: white;
+    border: 1.5px solid #D4D4D4;
+    color: #404040;
+    font-size: 14px;
+}
+
+.large-button {
+    height: 50px;
+    padding: 12px 24px;
 }
