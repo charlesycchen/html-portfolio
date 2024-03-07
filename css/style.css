@@ -2,6 +2,10 @@ body {
     font-family: "Poppins";
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -138,9 +142,18 @@ body {
     text-align: justify;
 }
 
+.project-card-body {
+    max-height: 360px;
+}
+
 .project-preview-text {
     color: #404040;
     text-align: justify;
+}
+
+.project-preview-image {
+    height: 312px;
+    margin: 16px 16px 16px 16px;
 }
 
 .project-button {
@@ -148,6 +161,18 @@ body {
     border: 1.5px solid #D4D4D4;
     color: #404040;
     font-size: 14px;
+}
+
+.skill {
+    display: inline-block;
+    width: 165px;
+    height: 180;
+    padding: 10px 10px;
+}
+
+.skill-icon {
+    height: 110px;
+    width: 110px;
 }
 
 .large-button {
