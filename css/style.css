@@ -117,8 +117,8 @@ h2 {
 
 .navbar {
     height: 90px;
-    padding-left: 76px;
-    padding-right: 76px;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: white;
 }
 
@@ -153,7 +153,8 @@ h2 {
 
 .project-preview-image {
     height: 312px;
-    margin: 16px 16px 16px 16px;
+    object-fit: contain;
+    margin: 16px 16px;
 }
 
 .project-button {
@@ -178,4 +179,10 @@ h2 {
 .large-button {
     height: 50px;
     padding: 12px 24px;
+}
+
+@media (max-width: 575.98px) {
+    .project-preview-image {
+        height: auto;
+    }
 }
