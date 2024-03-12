@@ -164,6 +164,11 @@ h2 {
     font-size: 14px;
 }
 
+#skills h2,
+#skills h3 {
+    text-align: center;
+}
+
 .skill {
     display: inline-block;
     width: 165px;
@@ -176,13 +181,38 @@ h2 {
     width: 110px;
 }
 
+.skill > h4 {
+    font-weight: 300;
+}
+
 .large-button {
     height: 50px;
     padding: 12px 24px;
 }
 
+
 @media (max-width: 575.98px) {
+    main {
+        margin: 0 1.25rem;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .hero-introduction {
+        font-size: 1rem;
+    }
+
+    #heroButtonGroup {
+        justify-content: center !important;
+    }
+
     .project-preview-image {
         height: auto;
+    }
+
+    #skills > div > div > div {
+        padding: 0 0;
     }
 }

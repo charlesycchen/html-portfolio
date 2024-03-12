@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Home page of Charles Chen's personal website. See what project I'm doing now. Let's connect and talk about some new ideas!">
+  <meta name="description"
+    content="Home page of Charles Chen's personal website. See what project I'm doing now. Let's connect and talk about some new ideas!">
   <meta name="keywords" content="Personal Website, Project, Charles Chen, Idea">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charles Chen</title>
 
   <!-- Bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,276 +52,290 @@
   </nav>
 
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="container py-4 mb-5" style="margin-top: 90px;">
-      <div class="row flex-lg-row-reverse align-items-center gy-4 py-5">
-        <div class="col-sm-8 col-lg-6 mx-auto mx-lg-0">
-          <img src="./assets/images/people-working-at-the-office.svg" class="d-block img-fluid mx-lg-auto"
-            alt="people-working-at-the-office" width="540" height="570" loading="lazy">
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-2 fw-bold lh-sm mb-3"><span class="fs-3 poppins-medium">Hi, I’m</span> <br>Charles Chen
-          </h1>
-          <p class="hero-introduction lead poppins-regular">I’m a new graduate majoring in Physics and minoring in
-            Computer Science and
-            Engineering, looking for a Software Engineer position.
-            I’m enthusiastic about new technology, project management and productivity enhancement. I also love
-            reading books, meditation, doing yoga and learning life wisdom.</p>
-          <div class="d-flex justify-content-start">
-            <a class="btn btn-primary btn-lg px-4 me-3" href="./resume.html">Resume</a>
-            <a class="btn btn-outline-secondary btn-lg px-4" href="./about.html">About me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="projects">
-    <div class="container mb-5">
-      <h2 class="poppins-semibold mb-4">Projects</h2>
-
-      <!-- Project 1 Preview Card -->
-      <div class="card mb-4">
-        <div class="row flex-lg-row-reverse g-lg-4 align-items-center justify-content-center">
-          <div class="col-lg-6 col-md-8 d-flex justify-content-center">
-            <img src="./assets/images/preview-of-the-effectiveness-of-various-precautions-against-pandemic-project.png"
-              class="project-preview-image img-fluid rounded"
-              alt="preview of the effectiveness of various precautions against pandemic project">
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="container py-4 mb-5" style="margin-top: 90px;">
+        <div class="row flex-lg-row-reverse align-items-center gy-4 py-5">
+          <div class="col-sm-8 col-lg-6 mx-auto mx-lg-0">
+            <img src="./assets/images/people-working-at-the-office.svg" class="d-block img-fluid mx-lg-auto"
+              alt="people-working-at-the-office" width="540" height="570" loading="lazy">
           </div>
           <div class="col-lg-6">
-            <div class="project-card-body card-body">
-              <h3 class="card-title mb-2">The Effectiveness of Various Precautions Against Pandemic</h3>
-              <h5 class="card-subtitle poppins-regular mb-3">Mar, 2021 – Jun, 2021</h5>
-              <p class="project-preview-text card-text">a book or other written or printed work, regarded in terms of
-                its content rather than its physical form.</p>
-              <div class="d-flex gap-2">
-                <a href="#" class="project-button btn disabled">Article</a>
-                <a href="#" class="project-button btn disabled" target="_blank" rel="noopener noreferrer">Demo
-                  <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
-                <a href="https://github.com/The-Statistical-Thermodynamics-Group/Final-Project" class="project-button btn" target="_blank" rel="noopener noreferrer">Source
-                  <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
-              </div>
+            <h1 class="display-2 fw-bold lh-sm mb-3"><span class="fs-3 poppins-medium">Hi, I’m</span> <br>Charles Chen
+            </h1>
+            <p class="hero-introduction lead poppins-regular">I’m a new graduate majoring in Physics and minoring in
+              Computer Science and
+              Engineering, looking for a Software Engineer position.
+              I’m enthusiastic about new technology, project management and productivity enhancement. I also love
+              reading books, meditation, doing yoga and learning life wisdom.</p>
+            <div class="d-flex justify-content-start gap-3" id="heroButtonGroup">
+              <a class="btn btn-primary btn-lg px-4" href="./resume.html">Resume</a>
+              <a class="btn btn-outline-secondary btn-lg px-4" href="./about.html">About me</a>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Project 2 Preview Card -->
-      <div class="card mb-4">
-        <div class="row flex-lg-row-reverse g-lg-4 align-items-center justify-content-center">
-          <div class="col-lg-6 col-md-8 d-flex justify-content-center">
-            <img src="./assets/images/preview-of-license-plate-recognition-project.png"
-              class="project-preview-image img-fluid rounded" alt="preview of license plate recognition project">
-          </div>
-          <div class="col-lg-6">
-            <div class="project-card-body card-body">
-              <h3 class="card-title mb-2">License Plate Recognition</h3>
-              <h5 class="card-subtitle poppins-regular mb-3">Jan, 2021 - Jan, 2021</h5>
-              <p class="project-preview-text card-text">a book or other written or printed work, regarded in terms of
-                its content rather than its physical form.</p>
-              <div class="d-flex gap-2">
-                <a href="#" class="project-button btn disabled">Article</a>
-                <a href="#" class="project-button btn disabled" target="_blank" rel="noopener noreferrer">Demo
-                  <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
-                <a href="https://github.com/charlesycchen/Self-learning-Place/tree/main/license_plate_recognition" class="project-button btn" target="_blank" rel="noopener noreferrer">Source
-                  <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
+    <!-- Project Section -->
+    <section id="projects">
+      <div class="container mb-5">
+        <h2 class="poppins-semibold mb-4">Projects</h2>
+
+        <!-- Project 1 Preview Card -->
+        <div class="card mb-4">
+          <div class="row flex-lg-row-reverse g-lg-4 align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-8 d-flex justify-content-center">
+              <img
+                src="./assets/images/preview-of-the-effectiveness-of-various-precautions-against-pandemic-project.png"
+                class="project-preview-image img-fluid rounded"
+                alt="preview of the effectiveness of various precautions against pandemic project">
+            </div>
+            <div class="col-lg-6">
+              <div class="project-card-body card-body">
+                <h3 class="card-title mb-2">The Effectiveness of Various Precautions Against Pandemic</h3>
+                <h5 class="card-subtitle poppins-regular mb-3">Mar, 2021 – Jun, 2021</h5>
+                <p class="project-preview-text card-text">a book or other written or printed work, regarded in terms of
+                  its content rather than its physical form.</p>
+                <div class="d-flex gap-2">
+                  <a href="#" class="project-button btn disabled">Article</a>
+                  <a href="#" class="project-button btn disabled" target="_blank" rel="noopener noreferrer">Demo
+                    <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
+                  <a href="https://github.com/The-Statistical-Thermodynamics-Group/Final-Project"
+                    class="project-button btn" target="_blank" rel="noopener noreferrer">Source
+                    <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Project 3 Preview Card -->
-      <div class="card mb-5">
-        <div class="row flex-lg-row-reverse g-lg-4 align-items-center justify-content-center">
-          <div class="col-lg-6 col-md-8 d-flex justify-content-center">
-            <img src="./assets/images/preview-of-simple-stock-price-prediction-project.png"
-              class="project-preview-image img-fluid rounded" alt="preview of simple stock price prediction project">
-          </div>
-          <div class="col-lg-6">
-            <div class="project-card-body card-body">
-              <h3 class="card-title mb-2">Simple Stock Prediction With Tensorflow</h3>
-              <h5 class="card-subtitle poppins-regular mb-3">Jul, 2020 - Jul, 2020</h5>
-              <p class="project-preview-text card-text">a book or other written or printed work, regarded in terms of
-                its content rather than its physical form.</p>
-              <div class="d-flex gap-2">
-                <a href="#" class="project-button btn disabled">Article</a>
-                <a href="#" class="project-button btn disabled" target="_blank" rel="noopener noreferrer">Demo
-                  <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
-                <a href="https://github.com/charlesycchen/Self-learning-Place/tree/main/Stock_Prediction" class="project-button btn" target="_blank" rel="noopener noreferrer">Source
-                  <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
+        <!-- Project 2 Preview Card -->
+        <div class="card mb-4">
+          <div class="row flex-lg-row-reverse g-lg-4 align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-8 d-flex justify-content-center">
+              <img src="./assets/images/preview-of-license-plate-recognition-project.png"
+                class="project-preview-image img-fluid rounded" alt="preview of license plate recognition project">
+            </div>
+            <div class="col-lg-6">
+              <div class="project-card-body card-body">
+                <h3 class="card-title mb-2">License Plate Recognition</h3>
+                <h5 class="card-subtitle poppins-regular mb-3">Jan, 2021 - Jan, 2021</h5>
+                <p class="project-preview-text card-text">a book or other written or printed work, regarded in terms of
+                  its content rather than its physical form.</p>
+                <div class="d-flex gap-2">
+                  <a href="#" class="project-button btn disabled">Article</a>
+                  <a href="#" class="project-button btn disabled" target="_blank" rel="noopener noreferrer">Demo
+                    <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
+                  <a href="https://github.com/charlesycchen/Self-learning-Place/tree/main/license_plate_recognition"
+                    class="project-button btn" target="_blank" rel="noopener noreferrer">Source
+                    <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="d-flex justify-content-center">
-        <a href="./project/" class="large-button btn btn-dark">View all projects</a>
-      </div>
-    </div>
-  </section>
+        <!-- Project 3 Preview Card -->
+        <div class="card mb-5">
+          <div class="row flex-lg-row-reverse g-lg-4 align-items-center justify-content-center">
+            <div class="col-lg-6 col-md-8 d-flex justify-content-center">
+              <img src="./assets/images/preview-of-simple-stock-price-prediction-project.png"
+                class="project-preview-image img-fluid rounded" alt="preview of simple stock price prediction project">
+            </div>
+            <div class="col-lg-6">
+              <div class="project-card-body card-body">
+                <h3 class="card-title mb-2">Simple Stock Prediction With Tensorflow</h3>
+                <h5 class="card-subtitle poppins-regular mb-3">Jul, 2020 - Jul, 2020</h5>
+                <p class="project-preview-text card-text">a book or other written or printed work, regarded in terms of
+                  its content rather than its physical form.</p>
+                <div class="d-flex gap-2">
+                  <a href="#" class="project-button btn disabled">Article</a>
+                  <a href="#" class="project-button btn disabled" target="_blank" rel="noopener noreferrer">Demo
+                    <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
+                  <a href="https://github.com/charlesycchen/Self-learning-Place/tree/main/Stock_Prediction"
+                    class="project-button btn" target="_blank" rel="noopener noreferrer">Source
+                    <img class="ms-1" src="./assets/images/external-link-icon.svg" alt="external link icon"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-  <section id="skills">
-    <div class="container pt-5 mb-5">
-      <h2 class="poppins-semibold mb-4">Skills</h2>
-
-      <h3 class="poppins-medium mb-3">Using Now</h3>
-      <div class="row g-4 text-center">
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/cplusplus-logo.svg" alt="C++ logo">
-          </div>
-          <h4>C++</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/html5-logo.svg" alt="HTML5 logo">
-          </div>
-          <h4>HTML5</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/css3-logo.svg" alt="CSS3 logo">
-          </div>
-          <h4>CSS3</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/bootstrap-logo.svg" alt="Bootstrap logo">
-          </div>
-          <h4>Bootstrap 5</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/figma-logo.svg" alt="Figma logo">
-          </div>
-          <h4>Figma</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/github-logo.svg" alt="GitHub logo">
-          </div>
-          <h4>GitHub</h4>
+        <div class="d-flex justify-content-center">
+          <a href="./project/" class="large-button btn btn-dark">View all projects</a>
         </div>
       </div>
+    </section>
 
-      <h3 class="poppins-medium mb-3">Used Before</h3>
-      <div class="row g-4 text-center">
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/python-logo.svg" alt="Python logo">
-          </div>
-          <h4>Python</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/java-logo.svg" alt="Java logo">
-          </div>
-          <h4>Java</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/c-logo.svg" alt="C programming language logo">
-          </div>
-          <h4>C</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/opencv-logo.svg" alt="OpenCV logo">
-          </div>
-          <h4>OpenCV</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/tensorflow-logo.svg" alt="Tensorflow logo">
-          </div>
-          <h4>Tensorflow</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/scikit-learn-logo.svg" alt="Scikit-Learn logo">
-          </div>
-          <h4>Scikit-Learn</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/mongodb-logo.svg" alt="MongoDB logo">
-          </div>
-          <h4>MongoDB</h4>
-        </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/linux-logo.svg" alt="Linux logo">
-          </div>
-          <h4>Linux</h4>
-        </div>
-      </div>
+    <!-- Skill Section -->
+    <section id="skills">
+      <div class="container pt-5 mb-5">
+        <h2 class="poppins-semibold mb-4">Skills</h2>
 
-      <h3 class="poppins-medium mb-3">Learning</h3>
-      <div class="row g-4 text-center">
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/javascript-logo.svg" alt="JavaScript logo">
+        <h3 class="poppins-medium mb-3">Using Now</h3>
+        <div class="row justify-content-center g-4 text-center mb-3">
+          <div class="col-lg-10">
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/cplusplus-logo.svg" alt="C++ logo">
+              </div>
+              <h4>C++</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/html5-logo.svg" alt="HTML5 logo">
+              </div>
+              <h4>HTML5</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/css3-logo.svg" alt="CSS3 logo">
+              </div>
+              <h4>CSS3</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/bootstrap-logo.svg" alt="Bootstrap logo">
+              </div>
+              <h4>Bootstrap 5</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/figma-logo.svg" alt="Figma logo">
+              </div>
+              <h4>Figma</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/github-logo.svg" alt="GitHub logo">
+              </div>
+              <h4>GitHub</h4>
+            </div>
           </div>
-          <h4>JavaScript</h4>
         </div>
-        <div class="skill">
-          <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
-            <img src="./assets/images/docker-logo.svg" alt="Docker logo">
+
+        <h3 class="poppins-medium mb-3">Used Before</h3>
+        <div class="row justify-content-center g-4 text-center mb-3">
+          <div class="col-lg-10">
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/python-logo.svg" alt="Python logo">
+              </div>
+              <h4>Python</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/java-logo.svg" alt="Java logo">
+              </div>
+              <h4>Java</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/c-logo.svg" alt="C programming language logo">
+              </div>
+              <h4>C</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/opencv-logo.svg" alt="OpenCV logo">
+              </div>
+              <h4>OpenCV</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/tensorflow-logo.svg" alt="Tensorflow logo">
+              </div>
+              <h4>Tensorflow</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/scikit-learn-logo.svg" alt="Scikit-Learn logo">
+              </div>
+              <h4>Scikit-Learn</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/mongodb-logo.svg" alt="MongoDB logo">
+              </div>
+              <h4>MongoDB</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/linux-logo.svg" alt="Linux logo">
+              </div>
+              <h4>Linux</h4>
+            </div>
           </div>
-          <h4>Docker</h4>
         </div>
-      </div>
-    </div>
-  </section>
 
-
-  <section id="about">
-    <div class="container pt-5 mb-5">
-      <h2 class="poppins-semibold text-center mb-4">About Me</h2>
-      <div class="row align-items-top g-3">
-        <div class="col-lg-5 d-flex justify-content-center align-items-center">
-          <img src="./assets/images/people-working-at-the-office.svg" class="d-block img-fluid mx-lg-auto"
-            alt="people-working-at-the-office" width="540" height="570" loading="lazy">
-        </div>
-        <div class="col-lg-7">
-          <h3 class="mb-2">I Develop Web Backend to Make People Use Data Easily</h3>
-          <p class="hero-introduction lead poppins-regular mb-4">I’m a new graduate majoring in Physics and minoring in
-            Computer Science and
-            Engineering, looking for a Software Engineer position.
-            I’m enthusiastic about new technology, project management and productivity enhancement. I also love
-            reading books, meditation, doing yoga and learning life wisdom.</p>
-
-          <div class="d-flex justify-content-lg-start justify-content-center">
-            <a href="./about.html" class="large-button btn btn-dark">About me</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="contact">
-    <div class="container py-5 mb-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 col-md-10">
-          <h2 class="poppins-semibold text-center mb-4">Let's Talk</h2>
-          <p class="text-center mb-4">Feel free to reach out to me. We can discuss the current affairs, social issues or
-            future trends in any
-            field.
-            Let’s generate new ideas together and learn from each other!</p>
-
-          <div class="d-flex justify-content-center">
-            <a href="./contact.html" class="large-button btn btn-dark">Contact me</a>
+        <h3 class="poppins-medium mb-3">Learning</h3>
+        <div class="row justify-content-center g-4 text-center">
+          <div class="col-lg-10">
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/javascript-logo.svg" alt="JavaScript logo">
+              </div>
+              <h4>JavaScript</h4>
+            </div>
+            <div class="skill">
+              <div class="skill-icon d-flex align-items-center justify-content-center mx-auto mb-3">
+                <img src="./assets/images/docker-logo.svg" alt="Docker logo">
+              </div>
+              <h4>Docker</h4>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container pt-5 mb-5">
+        <h2 class="poppins-semibold text-center mb-4">About Me</h2>
+        <div class="row align-items-top g-3">
+          <div class="col-lg-5 d-flex justify-content-center align-items-center">
+            <img src="./assets/images/people-working-at-the-office.svg" class="d-block img-fluid mx-lg-auto"
+              alt="people-working-at-the-office" width="540" height="570" loading="lazy">
+          </div>
+          <div class="col-lg-7">
+            <h3 class="mb-2">I Develop Web Backend to Make People Use Data Easily</h3>
+            <p class="hero-introduction lead poppins-regular mb-4">I’m a new graduate majoring in Physics and minoring
+              in
+              Computer Science and
+              Engineering, looking for a Software Engineer position.
+              I’m enthusiastic about new technology, project management and productivity enhancement. I also love
+              reading books, meditation, doing yoga and learning life wisdom.</p>
+
+            <div class="d-flex justify-content-lg-start justify-content-center">
+              <a href="./about.html" class="large-button btn btn-dark">About me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container py-5 mb-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <h2 class="poppins-semibold text-center mb-4">Let's Talk</h2>
+            <p class="text-center mb-4">Feel free to reach out to me. We can discuss the current affairs, social issues
+              or
+              future trends in any
+              field.
+              Let’s generate new ideas together and learn from each other!</p>
+
+            <div class="d-flex justify-content-center">
+              <a href="./contact.html" class="large-button btn btn-dark">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
 
   <footer>
@@ -333,8 +349,9 @@
           </a>
         </div>
         <!-- Navigation Menu -->
-        <div class="col-xl-auto col-lg-7 col-12 d-flex justify-content-xl-center justify-content-lg-end justify-content-center mt-lg-0 mt-2">
-          <ul class="nav nav-pills gap-1">
+        <div
+          class="col-xl-auto col-lg-7 col-12 d-flex justify-content-xl-center justify-content-lg-end justify-content-center mt-lg-0 mt-2">
+          <ul class="nav nav-pills justify-content-center gap-1">
             <li class="nav-item"><a href="/" class="nav-link home" aria-current="page">Home</a></li>
             <li class="nav-item"><a href="./about.html" class="nav-link text-body-secondary">About</a></li>
             <li class="nav-item"><a href="./project/" class="nav-link text-body-secondary">Projects</a></li>
@@ -370,7 +387,9 @@
   </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
