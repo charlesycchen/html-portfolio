@@ -1,11 +1,3 @@
-body {
-    font-family: "Poppins";
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -115,6 +107,14 @@ h2 {
 }
 
 
+body {
+    font-family: "Poppins";
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
 .navbar {
     height: 90px;
     padding-left: 5%;
@@ -192,6 +192,20 @@ h2 {
 
 
 @media (max-width: 575.98px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar-brand > img {
+        content: url("../assets/images/website-logo-small.svg");
+        max-width: 60px;
+
+    }
+
+    .navbar-brand > span {
+        font-size: 1em !important;
+    }
+
     main {
         margin: 0 1.25rem;
     }
