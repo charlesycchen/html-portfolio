@@ -191,7 +191,45 @@ h2 {
 }
 
 
+@media (max-width: 991.98px) and (min-width: 768px) {
+    #navbarMenu {
+        max-width: 200px !important;
+    }
+
+    a.nav-link.highlight {
+        width: 80px;
+    }
+
+    .offcanvas-header {
+        height: 90px;
+    }
+}
+
+
+@media (max-width: 767.98px) and (min-width: 576px) {
+    #navbarMenu {
+        max-width: 200px !important;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    a.nav-link.highlight {
+        width: 80px;
+    }
+
+    .offcanvas-header {
+        height: 70px;
+    }
+}
+
+
 @media (max-width: 575.98px) {
+    #navbarMenu {
+        max-width: 200px !important;
+    }
+
     .navbar {
         height: 70px;
     }
@@ -204,6 +242,14 @@ h2 {
 
     .navbar-brand > span {
         font-size: 1em !important;
+    }
+
+    a.nav-link.highlight {
+        width: 80px;
+    }
+
+    .offcanvas-header {
+        height: 70px;
     }
 
     main {
