@@ -185,6 +185,12 @@ h2 {
     font-weight: 300;
 }
 
+.about-image {
+    max-width: 450px;
+    width: 100%;
+    border-radius: 8px;
+}
+
 .large-button {
     height: 50px;
     padding: 12px 24px;
