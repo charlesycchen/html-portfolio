@@ -121,21 +121,21 @@ h2 {
     padding-right: 5%;
     background-color: white;
 }
-
 .navbar-nav {
     column-gap: 12px;
 }
-
 .nav-link {
     padding: 8px 8px;
 }
-
 .nav-link.home {
     color: #262626;
 }
-
 .nav-link.highlight {
     outline: 2px solid #2563EB;
+}
+
+.margin-navbar {
+    margin-top: 90px;
 }
 
 .hero-introduction {
@@ -145,18 +145,15 @@ h2 {
 .project-card-body {
     max-height: 360px;
 }
-
 .project-preview-text {
     color: #404040;
     text-align: justify;
 }
-
 .project-preview-image {
     height: 312px;
     object-fit: contain;
     margin: 16px 16px;
 }
-
 .project-button {
     background-color: white;
     border: 1.5px solid #D4D4D4;
@@ -168,19 +165,16 @@ h2 {
 #skills h3 {
     text-align: center;
 }
-
 .skill {
     display: inline-block;
     width: 165px;
     height: 180;
     padding: 10px 10px;
 }
-
 .skill-icon {
     height: 110px;
     width: 110px;
 }
-
 .skill > h4 {
     font-weight: 300;
 }
@@ -190,7 +184,6 @@ h2 {
     width: 100%;
     border-radius: 8px;
 }
-
 .about-image + a {
     font-size: 12px;
     color: black;
@@ -207,11 +200,9 @@ h2 {
     #navbarMenu {
         max-width: 200px !important;
     }
-
     a.nav-link.highlight {
         width: 80px;
     }
-
     .offcanvas-header {
         height: 90px;
     }
@@ -219,53 +210,53 @@ h2 {
 
 
 @media (max-width: 767.98px) and (min-width: 576px) {
-    #navbarMenu {
-        max-width: 200px !important;
-    }
-
     .navbar {
         height: 70px;
     }
-
+    #navbarMenu {
+        max-width: 200px !important;
+    }
     a.nav-link.highlight {
         width: 80px;
     }
-
     .offcanvas-header {
         height: 70px;
+    }
+
+    .margin-navbar {
+        margin-top: 70px;
     }
 }
 
 
 @media (max-width: 575.98px) {
-    #navbarMenu {
-        max-width: 200px !important;
-    }
-
     .navbar {
         height: 70px;
     }
-
     .navbar-brand > img {
         content: url("../assets/images/website-logo-small.svg");
         max-width: 60px;
 
     }
-
     .navbar-brand > span {
         font-size: 1em !important;
     }
 
+    #navbarMenu {
+        max-width: 200px !important;
+    }
     a.nav-link.highlight {
         width: 80px;
     }
-
     .offcanvas-header {
         height: 70px;
     }
 
     main {
         margin: 0 1.25rem;
+    }
+    .margin-navbar {
+        margin-top: 70px;
     }
 
     h2 {
@@ -275,7 +266,6 @@ h2 {
     .hero-introduction {
         font-size: 1rem;
     }
-
     #heroButtonGroup {
         justify-content: center !important;
     }

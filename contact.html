@@ -1,8 +1,183 @@
-<h1>Contact Me</h1>
-<p>Mob: (+886) 908-359-816</p>
-<p>Email: charycchen@gmail.com</p>
-<p>Location:</p>
-<p>
-  Hsinchu City,<br />
-  R.O.C. (Taiwan)<br />
-</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Contact | Charles Chen</title>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Hi, I'm Charles Chen. Feel free to reach out to me. Let’s generate new ideas together and learn from each other!">
+  <meta name="keywords" content="Contact, Connect, Learn, Charles Chen, Idea">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+    <!-- Logo -->
+    <a href="./" class="navbar-brand d-flex">
+      <img src="./assets/images/website-logo-large.svg" class="me-3" alt="large website logo">
+      <span class="fs-2 poppins-semibold">Charles Chen</span>
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="navbarMenu" aria-label="Offcanvas">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav nav-pills ms-auto">
+          <li class="nav-item"><a href="./" class="nav-link home" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="./project/" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="./blog/" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="./book/" class="nav-link">Books</a></li>
+          <li class="nav-item"><a href="./resume.html" class="nav-link highlight">Resume</a></li>
+          <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="margin-navbar">
+    <div class="container py-5 mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+          <h6 class="poppins-medium text-center" style="color:#525252">Contact Me</h6>
+          <h2 class="poppins-semibold text-center mb-4">Let's Talk</h2>
+          <p class="text-center mb-4">
+            Feel free to reach out to me. We can discuss the current affairs, social issues or future trends in any
+            field. Let’s generate new ideas together and learn from each other!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-5">
+          <img src="" alt="" width="445">
+        </div>
+        <div class="col-lg-7">
+          <form class="needs-validation" id="contactForm" novalidate>
+            <div class="row gy-3">
+              <div class="col-sm-6">
+                <label for="fname" class="form-label">First name <span>*</span></label>
+                <input type="text" class="form-control" id="fname" required>
+                <div class="invalid-feedback">Please enter your first name.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="lname" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lname">
+              </div>
+              <div class="col-sm-6">
+                <label for="email" class="form-label">Email address <span>*</span></label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please enter your Email address.</div>
+              </div>
+              <div class="col-sm-6">
+                <label for="phone" class="form-label">Phone number</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label">Subject <span>*</span></label>
+                <input type="text" class="form-control" id="subject" required>
+                <div class="invalid-feedback">Please give a subject of your message.</div>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message <span>*</span></label>
+                <textarea class="form-control" placeholder="Type your message here..." id="message" rows="8"
+                  required></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="container border-top">
+      <div class="row pt-3 mb-5">
+        <!-- Logo -->
+        <div class="col-xl col-lg-5 col-12 d-flex justify-content-lg-start justify-content-center">
+          <a href="./" class="navbar-brand d-flex align-items-center">
+            <img src="./assets/images/website-logo-small.svg" class="me-3" alt="large website logo">
+            <span class="fs-4 poppins-semibold">Charles Chen</span>
+          </a>
+        </div>
+        <!-- Navigation Menu -->
+        <div
+          class="col-xl-auto col-lg-7 col-12 d-flex justify-content-xl-center justify-content-lg-end justify-content-center mt-lg-0 mt-2">
+          <ul class="nav nav-pills justify-content-center gap-1">
+            <li class="nav-item"><a href="./" class="nav-link home" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="./about.html" class="nav-link text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="./project/" class="nav-link text-body-secondary">Projects</a></li>
+            <li class="nav-item"><a href="./blog/" class="nav-link text-body-secondary">Blog</a></li>
+            <li class="nav-item"><a href="./book/" class="nav-link text-body-secondary">Books</a></li>
+            <li class="nav-item"><a href="./resume.html" class="nav-link text-body-secondary">Resume</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link text-body-secondary">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div class="col-xl d-flex justify-content-xl-end justify-content-center mt-xl-0 mt-2">
+          <ul class="nav justify-content-end gap-2">
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/charlesycchen/" target="_blank"
+                rel="noopener noreferrer">
+                <img src="./assets/images/linkedin-icon.svg" alt="LinkedIn SVG icon"></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://github.com/charlesycchen" target="_blank"
+                rel="noopener noreferrer">
+                <img src="./assets/images/github-icon.svg" alt="GitHub SVG icon"></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://medium.com/@charlesycchen" target="_blank"
+                rel="noopener noreferrer">
+                <img src="./assets/images/medium-icon.svg" alt="Medium SVG icon"></a></li>
+            <li class="nav-item"><a class="nav-link" href="mailto:charycchen@gmail.com">
+                <img src="./assets/images/mail-icon.svg" alt="Mail SVG icon"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright Anouncement -->
+      <div class="row">
+        <p class="text-center text-body-secondary">Copyright © 2024 - 2024 Charles Chen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+<script>
+  // Add event listener to the form's submit event
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission if validation fails
+    if (this.checkValidity() === false) {
+      event.stopPropagation(); // Stop the event from propagating further
+    }
+    this.classList.add("was-validated"); // Add 'was-validated' class to enable Bootstrap's styling
+  }, false);
+</script>
+</html>
