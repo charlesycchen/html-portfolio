@@ -9,6 +9,9 @@
   <meta name="keywords" content="Contact, Connect, Learn, Charles Chen, Idea">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- International Phone Input Validation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/css/intlTelInput.css">
+
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -92,7 +95,9 @@
               </div>
               <div class="col-sm-6">
                 <label for="phone" class="form-label">Phone number</label>
-                <input type="tel" class="form-control" id="phone">
+                <input type="tel" class="form-control" id="phone" aria-describedby="invalidPhoneFeedback validPhoneFeedback">
+                <div class="invalid-feedback" id="invalidPhoneFeedback">invalid</div>
+                <div class="valid-feedback" id="validPhoneFeedback">valid</div>
               </div>
               <div class="col-12">
                 <label for="subject" class="form-label">Subject <span>*</span></label>
@@ -103,7 +108,7 @@
                 <label for="message" class="form-label">Message <span>*</span></label>
                 <textarea class="form-control" placeholder="Type your message here..." id="message" rows="8"
                   required></textarea>
-                <div class="invalid-feedback">Please enter a message.</div>
+                <div class="invalid-feedback">Please enter your message.</div>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -164,6 +169,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/intlTelInput.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -179,5 +185,69 @@
     }
     this.classList.add("was-validated"); // Add 'was-validated' class to enable Bootstrap's styling
   }, false);
+
+  // International Phone Input Validation
+  const phoneInput = document.querySelector("#phone");
+  const invalidPhoneFeedback = document.querySelector("#invalidPhoneFeedback");
+  const validPhoneFeedback = document.querySelector("#validPhoneFeedback");
+
+  const iti = window.intlTelInput(phoneInput, {
+    initialCountry: "auto",
+    geoIpLookup: callback => {
+      fetch("https://ipapi.co/json")
+        .then(res => res.json())
+        .then(data => callback(data.country_code))
+        .catch(() => callback("tw"));
+    },
+    showSelectedDialCode: true,
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.7/build/js/utils.js",
+  });
+
+  const reset = () => {
+    input.classList.remove("error");
+    errorMsg.innerHTML = "";
+    errorMsg.classList.add("hide");
+    validMsg.classList.add("hide");
+  };
+
+  const showInvalidPhoneFeedback = (feedback) => {
+    input.classList.add("error");
+    errorMsg.innerHTML = feedback;
+    errorMsg.classList.remove("hide");
+  };
+
+  const showValidPhoneFeedback = (feedback) => {
+    input.classList.add("error");
+    errorMsg.innerHTML = feedback;
+    errorMsg.classList.remove("hide");
+  };
+
+  const handleChange = () => {
+    reset();
+    let text;
+    if (phoneInput.value) {
+      if (iti.isValidNumber()) {
+        text = "Valid number! Full international format: " + iti.getNumber();
+        validPhoneFeedback.classList.add("is-valid");
+      } else {
+        text = "Invalid number - please try again";
+        invalidPhoneFeedback.classList.add("is-invalid");
+      }
+
+    } else {
+      text = "Please enter a valid number below";
+    }
+
+    const textNode = document.createTextNode(text);
+    invalidPhoneFeedback.innerHTML = "";
+    invalidPhoneFeedback.appendChild(textNode);
+  };
+
+  // listen to "keyup", but also "change" to update when the user selects a country
+  phoneInput.addEventListener('change', handleChange);
+  phoneInput.addEventListener('keyup', handleChange);
+
+
 </script>
+
 </html>
