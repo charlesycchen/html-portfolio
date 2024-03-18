@@ -225,7 +225,7 @@
   const handlePhoneChange = () => {
     reset();
     let text;
-    if (iti.isValidNumber()) {
+    if (iti.isValidNumberPrecise()) {
       text = "Valid number! International format: " + iti.getNumber();
       phoneInput.classList.add("is-valid");
       showValidPhoneFeedback(text);
