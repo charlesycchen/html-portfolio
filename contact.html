@@ -95,9 +95,10 @@
               </div>
               <div class="col-sm-6">
                 <label for="phone" class="form-label">Phone number</label>
-                <input type="tel" class="form-control" id="phone" aria-describedby="invalidPhoneFeedback validPhoneFeedback">
-                <div class="invalid-feedback" id="invalidPhoneFeedback">invalid</div>
-                <div class="valid-feedback" id="validPhoneFeedback">valid</div>
+                <input type="tel" class="form-control" id="phone"
+                  aria-describedby="invalidPhoneFeedback validPhoneFeedback">
+                <div class="invalid-feedback" id="invalidPhoneFeedback"></div>
+                <div class="valid-feedback" id="validPhoneFeedback"></div>
               </div>
               <div class="col-12">
                 <label for="subject" class="form-label">Subject <span>*</span></label>
@@ -127,7 +128,7 @@
         <!-- Logo -->
         <div class="col-xl col-lg-5 col-12 d-flex justify-content-lg-start justify-content-center">
           <a href="./" class="navbar-brand d-flex align-items-center">
-            <img src="./assets/images/website-logo-small.svg" class="me-3" alt="large website logo">
+            <img src="./assets/images/website-logo-small.svg" class="me-3" alt="small website logo">
             <span class="fs-4 poppins-semibold">Charles Chen</span>
           </a>
         </div>
@@ -204,50 +205,40 @@
   });
 
   const reset = () => {
-    input.classList.remove("error");
-    errorMsg.innerHTML = "";
-    errorMsg.classList.add("hide");
-    validMsg.classList.add("hide");
+    phoneInput.classList.remove("is-valid", "is-invalid");
+    invalidPhoneFeedback.classList.remove("d-block");
+    validPhoneFeedback.classList.remove("d-block");
   };
 
   const showInvalidPhoneFeedback = (feedback) => {
-    input.classList.add("error");
-    errorMsg.innerHTML = feedback;
-    errorMsg.classList.remove("hide");
+    
+    invalidPhoneFeedback.innerHTML = feedback;
+    invalidPhoneFeedback.classList.add("d-block");
   };
 
   const showValidPhoneFeedback = (feedback) => {
-    input.classList.add("error");
-    errorMsg.innerHTML = feedback;
-    errorMsg.classList.remove("hide");
+    
+    validPhoneFeedback.innerHTML = feedback;
+    validPhoneFeedback.classList.add("d-block");
   };
 
-  const handleChange = () => {
+  const handlePhoneChange = () => {
     reset();
     let text;
-    if (phoneInput.value) {
-      if (iti.isValidNumber()) {
-        text = "Valid number! Full international format: " + iti.getNumber();
-        validPhoneFeedback.classList.add("is-valid");
-      } else {
-        text = "Invalid number - please try again";
-        invalidPhoneFeedback.classList.add("is-invalid");
-      }
-
+    if (iti.isValidNumber()) {
+      text = "Valid number! International format: " + iti.getNumber();
+      phoneInput.classList.add("is-valid");
+      showValidPhoneFeedback(text);
     } else {
-      text = "Please enter a valid number below";
+      text = "Invalid number";
+      phoneInput.classList.add("is-invalid");
+      showInvalidPhoneFeedback(text);
     }
-
-    const textNode = document.createTextNode(text);
-    invalidPhoneFeedback.innerHTML = "";
-    invalidPhoneFeedback.appendChild(textNode);
   };
 
   // listen to "keyup", but also "change" to update when the user selects a country
-  phoneInput.addEventListener('change', handleChange);
-  phoneInput.addEventListener('keyup', handleChange);
-
-
+  phoneInput.addEventListener("change", handlePhoneChange);
+  phoneInput.addEventListener('keyup', handlePhoneChange);
 </script>
 
 </html>
