@@ -77,9 +77,9 @@
           <img src="" alt="" width="445">
         </div>
         <div class="col-lg-7">
-          <form class="needs-validation" id="contactForm" novalidate>
+          <form id="contactForm" novalidate>
             <div class="row gy-3">
-              <div class="col-sm-6">
+              <div class="col-sm-6 needs-validation">
                 <label for="fname" class="form-label">First name <span>*</span></label>
                 <input type="text" class="form-control" id="fname" required>
                 <div class="invalid-feedback">Please enter your first name.</div>
@@ -88,7 +88,7 @@
                 <label for="lname" class="form-label">Last name</label>
                 <input type="text" class="form-control" id="lname">
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-6 needs-validation">
                 <label for="email" class="form-label">Email address <span>*</span></label>
                 <input type="email" class="form-control" id="email" required>
                 <div class="invalid-feedback">Please enter your Email address.</div>
@@ -100,12 +100,12 @@
                 <div class="invalid-feedback" id="invalidPhoneFeedback"></div>
                 <div class="valid-feedback" id="validPhoneFeedback"></div>
               </div>
-              <div class="col-12">
+              <div class="col-12 needs-validation">
                 <label for="subject" class="form-label">Subject <span>*</span></label>
                 <input type="text" class="form-control" id="subject" required>
                 <div class="invalid-feedback">Please give a subject of your message.</div>
               </div>
-              <div class="col-12">
+              <div class="col-12 needs-validation">
                 <label for="message" class="form-label">Message <span>*</span></label>
                 <textarea class="form-control" placeholder="Type your message here..." id="message" rows="8"
                   required></textarea>
@@ -178,15 +178,18 @@
 </body>
 
 <script>
+  var validateElements = document.querySelectorAll(".needs-validation");
+
   // Add event listener to the form's submit event
   document.getElementById("contactForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission if validation fails
     if (this.checkValidity() === false) {
       event.stopPropagation(); // Stop the event from propagating further
     }
-    this.classList.add("was-validated"); // Add 'was-validated' class to enable Bootstrap's styling
+    validateElements.forEach((element) => element.classList.add("was-validated"));
   }, false);
 
+  
   // International Phone Input Validation
   const phoneInput = document.querySelector("#phone");
   const invalidPhoneFeedback = document.querySelector("#invalidPhoneFeedback");
@@ -211,13 +214,11 @@
   };
 
   const showInvalidPhoneFeedback = (feedback) => {
-    
     invalidPhoneFeedback.innerHTML = feedback;
     invalidPhoneFeedback.classList.add("d-block");
   };
 
   const showValidPhoneFeedback = (feedback) => {
-    
     validPhoneFeedback.innerHTML = feedback;
     validPhoneFeedback.classList.add("d-block");
   };
@@ -225,14 +226,16 @@
   const handlePhoneChange = () => {
     reset();
     let text;
-    if (iti.isValidNumberPrecise()) {
-      text = "Valid number! International format: " + iti.getNumber();
-      phoneInput.classList.add("is-valid");
-      showValidPhoneFeedback(text);
-    } else {
+    if (phoneInput.value == "") {
+      return;
+    } else if (!iti.isValidNumberPrecise()) {
       text = "Invalid number";
       phoneInput.classList.add("is-invalid");
       showInvalidPhoneFeedback(text);
+    } else {
+      text = "Valid number! International format: " + iti.getNumber();
+      phoneInput.classList.add("is-valid");
+      showValidPhoneFeedback(text);
     }
   };
 
