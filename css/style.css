@@ -184,17 +184,17 @@ h2 {
     width: 100%;
     border-radius: 8px;
 }
-.about-image + a {
-    font-size: 12px;
-    color: black;
-    text-decoration-line: none;
-}
 
 .large-button {
     height: 50px;
     padding: 12px 24px;
 }
 
+.attribution-link {
+    font-size: 10px;
+    color: black;
+    text-decoration-line: none;
+}
 
 @media (max-width: 991.98px) and (min-width: 768px) {
     #navbarMenu {
@@ -281,6 +281,10 @@ h2 {
 
 
 /* Contact Page */
+.contact-image {
+    width: 100%;
+}
+
 .iti {
     display: block;
 }
