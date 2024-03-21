@@ -116,7 +116,7 @@ h2 {
 }
 
 .navbar {
-    height: 90px;
+    height: 80px;
     padding-left: 5%;
     padding-right: 5%;
     background-color: white;
@@ -135,9 +135,11 @@ h2 {
 }
 
 .margin-navbar {
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
+
+/* Home Page */
 .hero-introduction {
     text-align: justify;
 }
@@ -196,6 +198,27 @@ h2 {
     text-decoration-line: none;
 }
 
+
+/* Contact Page */
+.contact-image {
+    width: 100%;
+}
+
+.iti {
+    display: block;
+}
+
+
+/* About Page */
+.about-banner {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+
+/* Responsive Adjustment */
 @media (max-width: 991.98px) and (min-width: 768px) {
     #navbarMenu {
         max-width: 200px !important;
@@ -204,7 +227,7 @@ h2 {
         width: 80px;
     }
     .offcanvas-header {
-        height: 90px;
+        height: 80px;
     }
 }
 
@@ -212,6 +235,9 @@ h2 {
 @media (max-width: 767.98px) and (min-width: 576px) {
     .navbar {
         height: 70px;
+    }
+    .navbar-brand > img {
+        content: url("../assets/images/website-logo-medium.svg");
     }
     #navbarMenu {
         max-width: 200px !important;
@@ -226,6 +252,10 @@ h2 {
     .margin-navbar {
         margin-top: 70px;
     }
+
+    .about-banner {
+        height: 300px;
+    }
 }
 
 
@@ -235,8 +265,7 @@ h2 {
     }
     .navbar-brand > img {
         content: url("../assets/images/website-logo-small.svg");
-        max-width: 60px;
-
+        max-height: 40px;
     }
     .navbar-brand > span {
         font-size: 1em !important;
@@ -277,14 +306,10 @@ h2 {
     #skills > div > div > div {
         padding: 0 0;
     }
+
+    .about-banner {
+        height: 200px;
+    }
 }
 
 
-/* Contact Page */
-.contact-image {
-    width: 100%;
-}
-
-.iti {
-    display: block;
-}

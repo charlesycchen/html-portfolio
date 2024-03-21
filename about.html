@@ -1,13 +1,226 @@
-<h1>About Me</h1>
-<p>A new BS graduate majored in Physics and minored in Computer Science and Engineering at the National Chung Hsing University.</p>
+<!DOCTYPE html>
+<html lang="en">
 
-<p>Had 4-year experience in Python, 1-year experience in Java, C/C++, a little experience in machine learning and image 
-  processing with Tensorflow, Scikit-Learn and OpenCV and experience in database management by MongoDB and SQL. 
-  Familiar with Unix/Linux operating system.</p>
+<head>
+  <title>About | Charles Chen</title>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Home page of Charles Chen's personal website. See what project I'm doing now. Let's connect and generate some new ideas together!">
+  <meta name="keywords" content="About me, Expertise, Hobbies, Charles Chen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<p>With the training in physics, always use first principle thinking to get feasible solutions by finding the root causes. 
-  Able to express opinions clearly to people from different fields and organize positive ideas to reach a consensus, and 
-  good at document writing. Moreover, I have good and strong courage to ask key questions in order to get a big picture 
-  of problems. Recently, I just learned project managment skills so as to enhance my personal productivity.</p>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<p>Keen to pursue a career in software engineering with a focus on software development and data science!</p>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+    <!-- Logo -->
+    <a href="./" class="navbar-brand d-flex">
+      <img src="./assets/images/website-logo-large.svg" class="me-3" alt="large website logo">
+      <span class="fs-2 poppins-semibold">Charles Chen</span>
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="navbarMenu" aria-label="Offcanvas">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav nav-pills ms-auto">
+          <li class="nav-item"><a href="./" class="nav-link home" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="./project/" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="./blog/" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="./book/" class="nav-link">Books</a></li>
+          <li class="nav-item"><a href="./resume.html" class="nav-link highlight">Resume</a></li>
+          <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0 margin-navbar">
+    <img src="./assets/images/mountain-lake-with-reflection-of-white-peaks.jpg" alt="blue lake and white peaks"
+      class="about-banner">
+  </div>
+
+  <main>
+    <div class="container mt-5">
+      <!-- Brief Introduction -->
+      <section id="brief-introduction">
+        <h2 class="poppins-semibold display-5 text-center">Hi, I’m Charles Chen</h2>
+        <div class="row">
+          <div class="col-lg-5">
+
+          </div>
+          <div class="col-lg-7">
+            <p>A new BS graduate majored in Physics and minored in Computer Science and Engineering at the National
+              Chung
+              Hsing
+              University.</p>
+
+            <p>Had 4-year experience in Python, 1-year experience in Java, C/C++, a little experience in machine
+              learning
+              and
+              image
+              processing with Tensorflow, Scikit-Learn and OpenCV and experience in database management by MongoDB and
+              SQL.
+              Familiar with Unix/Linux operating system.</p>
+
+            <p>With the training in physics, always use first principle thinking to get feasible solutions by finding
+              the
+              root
+              causes.
+              Able to express opinions clearly to people from different fields and organize positive ideas to reach a
+              consensus,
+              and
+              good at document writing. Moreover, I have good and strong courage to ask key questions in order to get a
+              big
+              picture
+              of problems. Recently, I just learned project managment skills so as to enhance my personal productivity.
+            </p>
+
+            <p>Keen to pursue a career in software engineering with a focus on software development and data science!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hobbies Section -->
+      <section id="hobbies">
+        <div class="row">
+          <h3 class="fs-2">Hobbies</h3>
+          <h4>Reading</h4>
+          <p>
+            Curabitur a pharetra orci. Fusce augue magna, tempus quis magna nec, dapibus luctus velit. Orci varius
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris mi massa, tempor nec metus
+            a, euismod porta massa. Donec dictum sem ut arcu efficitur, sed auctor nibh consequat. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Proin nec ante vestibulum, suscipit risus eget, finibus tellus. Aliquam
+            erat volutpat. Suspendisse et odio interdum felis feugiat commodo sit amet placerat tellus. Nulla non
+            aliquam dolor.
+          </p>
+
+          <h4>Meditation</h4>
+          <p>
+            Curabitur a pharetra orci. Fusce augue magna, tempus quis magna nec, dapibus luctus velit. Orci varius
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris mi massa, tempor nec metus
+            a, euismod porta massa. Donec dictum sem ut arcu efficitur, sed auctor nibh consequat. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Proin nec ante vestibulum, suscipit risus eget, finibus tellus. Aliquam
+            erat volutpat. Suspendisse et odio interdum felis feugiat commodo sit amet placerat tellus. Nulla non
+            aliquam dolor.
+          </p>
+
+          <h4>Playing Piano</h4>
+          <p>
+            Nam dui massa, mollis a convallis at, condimentum scelerisque nisl. Mauris quis volutpat velit, non molestie
+            lectus. Nullam ultricies semper lorem at rutrum. Fusce egestas justo nec odio suscipit fermentum. Aenean
+            varius varius mauris at facilisis. Curabitur euismod accumsan cursus. Morbi commodo nunc turpis, id bibendum
+            ex suscipit in. Nunc a laoreet justo. Quisque laoreet eget turpis sed pellentesque. In mi ligula, egestas id
+            urna vitae, molestie pharetra tortor. Nam iaculis nibh sit amet ligula sodales, eget accumsan justo iaculis.
+            Curabitur sed lectus sed neque scelerisque lobortis. Suspendisse feugiat urna commodo quam fringilla tempor.
+            Suspendisse vulputate massa ipsum. Phasellus gravida, purus a tincidunt placerat, ex sapien convallis magna,
+            sit amet mattis nisl nibh gravida elit. Praesent at elit ac augue laoreet dapibus.
+          </p>
+
+          <h4>Singing</h4>
+          <p>
+            Nam dui massa, mollis a convallis at, condimentum scelerisque nisl. Mauris quis volutpat velit, non molestie
+            lectus. Nullam ultricies semper lorem at rutrum. Fusce egestas justo nec odio suscipit fermentum. Aenean
+            varius varius mauris at facilisis. Curabitur euismod accumsan cursus. Morbi commodo nunc turpis, id bibendum
+            ex suscipit in. Nunc a laoreet justo. Quisque laoreet eget turpis sed pellentesque. In mi ligula, egestas id
+            urna vitae, molestie pharetra tortor. Nam iaculis nibh sit amet ligula sodales, eget accumsan justo iaculis.
+            Curabitur sed lectus sed neque scelerisque lobortis. Suspendisse feugiat urna commodo quam fringilla tempor.
+            Suspendisse vulputate massa ipsum. Phasellus gravida, purus a tincidunt placerat, ex sapien convallis magna,
+            sit amet mattis nisl nibh gravida elit. Praesent at elit ac augue laoreet dapibus.
+          </p>
+
+          <h4>Music Production</h4>
+          <p>
+            Sed ultricies sapien lectus, nec consequat neque condimentum at. Donec efficitur, lectus id hendrerit
+            viverra, mauris neque tincidunt nisi, quis molestie eros augue sit amet ex. Sed vel nunc gravida, tristique
+            eros at, semper quam. Cras sed ex dolor. Quisque malesuada ac diam eget dignissim. Integer aliquam ornare
+            nisi, nec molestie leo pharetra eu. Proin magna sapien, dignissim nec mi ut, feugiat sodales ex. Nullam diam
+            ipsum, lacinia molestie egestas eu, rhoncus nec purus. Proin vestibulum dui nec nisi facilisis, sit amet
+            rutrum tortor efficitur. Pellentesque condimentum vestibulum erat, eget facilisis nunc dapibus vitae. Etiam
+            dui sem, accumsan sed metus a, vehicula blandit neque. Interdum et malesuada fames ac ante ipsum primis in
+            faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc
+            non mauris orci. Duis efficitur elementum nulla, ut sagittis erat aliquet vel.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="container border-top">
+      <div class="row pt-3 mb-5">
+        <!-- Logo -->
+        <div class="col-xl col-lg-5 col-12 d-flex justify-content-lg-start justify-content-center">
+          <a href="./" class="navbar-brand d-flex align-items-center">
+            <img src="./assets/images/website-logo-small.svg" class="me-3" alt="small website logo">
+            <span class="fs-4 poppins-semibold">Charles Chen</span>
+          </a>
+        </div>
+        <!-- Navigation Menu -->
+        <div
+          class="col-xl-auto col-lg-7 col-12 d-flex justify-content-xl-center justify-content-lg-end justify-content-center mt-lg-0 mt-2">
+          <ul class="nav nav-pills justify-content-center gap-1">
+            <li class="nav-item"><a href="./" class="nav-link home" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="./about.html" class="nav-link text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="./project/" class="nav-link text-body-secondary">Projects</a></li>
+            <li class="nav-item"><a href="./blog/" class="nav-link text-body-secondary">Blog</a></li>
+            <li class="nav-item"><a href="./book/" class="nav-link text-body-secondary">Books</a></li>
+            <li class="nav-item"><a href="./resume.html" class="nav-link text-body-secondary">Resume</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link text-body-secondary">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div class="col-xl d-flex justify-content-xl-end justify-content-center mt-xl-0 mt-2">
+          <ul class="nav justify-content-end gap-2">
+            <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/charlesycchen/" target="_blank"
+                rel="noopener noreferrer">
+                <img src="./assets/images/linkedin-icon.svg" alt="LinkedIn SVG icon"></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://github.com/charlesycchen" target="_blank"
+                rel="noopener noreferrer">
+                <img src="./assets/images/github-icon.svg" alt="GitHub SVG icon"></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://medium.com/@charlesycchen" target="_blank"
+                rel="noopener noreferrer">
+                <img src="./assets/images/medium-icon.svg" alt="Medium SVG icon"></a></li>
+            <li class="nav-item"><a class="nav-link" href="mailto:charycchen@gmail.com">
+                <img src="./assets/images/mail-icon.svg" alt="Mail SVG icon"></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright Anouncement -->
+      <div class="row">
+        <p class="text-center text-body-secondary">Copyright © 2024 - 2024 Charles Chen. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
